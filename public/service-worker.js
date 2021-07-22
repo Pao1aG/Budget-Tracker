@@ -4,7 +4,8 @@ const FILES_TO_CACHE = [
     "/manifest.webmanifest",
     "/assets/css/style.css",
     "/assets/js/index.js",
-    "/assets/images/icons/"
+    "/assets/images/icon-192x192.png",
+    "/assets/images/icon-512x512.png"
 ];
 
 const CACHE_NAME = "static-assets-cache";
