@@ -19,7 +19,7 @@ self.addEventListener("install", function(evt) {
       //open cache with this file name (stored in CACHE_NAME)
       caches.open(CACHE_NAME).then(cache => {
         console.log("Files successfully pre-cached!");
-        // These are the files that will be send to our cache
+        // These are the files that will be sent to our cache
         return cache.addAll(FILES_TO_CACHE);
       })
     );
@@ -45,7 +45,7 @@ self.addEventListener("install", function(evt) {
         );
       })
     );
-    // claim the current process and boot out the previos serviceWorker
+    // claim the current process and boot out the previous serviceWorker
     self.clients.claim();
   });
   
